@@ -2,64 +2,55 @@
 
 ## Project Overview
 
-This project implements a distributed data analytics pipeline using Apache Spark and Apache Cassandra on the MovieLens dataset.
+This project implements a distributed data analytics pipeline using Apache Spark and Apache Cassandra on the MovieLens 100K dataset.
 
-The project demonstrates:
-
-* Loading MovieLens data into HDFS
-* Creating Spark RDDs and DataFrames
-* Data cleaning and preprocessing
-* Analytical queries using Spark SQL
-* Storing analytical results in Cassandra
-* Reading Cassandra tables back into Spark for validation
+The project demonstrates data loading from HDFS, RDD creation, Spark DataFrame transformation, data preprocessing, analytical queries, Cassandra storage, and validation by reading Cassandra tables back into Spark.
 
 ## Technologies Used
 
-* Apache Spark 2.x
-* Apache Cassandra 3.11
-* Apache Zeppelin
-* Hadoop HDFS
-* Python (PySpark)
+- Apache Spark
+- Apache Cassandra
+- Apache Zeppelin
+- Hadoop HDFS
+- Hive
+- Python / PySpark
+- Spark-Cassandra Connector
+
+## Dataset
+
+MovieLens 100K dataset containing:
+
+- user ratings
+- user demographic information
+- movie details and genres
 
 ## Analytical Tasks
 
-### Task 1
-
-Movie rating statistics and genre analysis.
-
-### Task 2
-
-Top 10 highest-rated movies analysis.
-
-### Task 3
-
-Favourite genre analysis among active users.
-
-### Task 4
-
-Favourite genre analysis among users below 20 years old.
-
-### Task 5
-
-Favourite genre analysis among scientists aged 30–40 years old.
-
-### Task 6
-
-Store analytical outputs into Cassandra tables.
-
-### Task 7
-
-Validate Cassandra tables by reading them back into Spark.
+1. Calculate average rating for each movie.
+2. Identify top ten highest-rated movies.
+3. Identify active users and their favourite movie genres.
+4. Analyse users younger than 20 years old.
+5. Analyse scientists aged between 30 and 40 years old.
+6. Store processed analytical results into Cassandra.
+7. Read Cassandra tables back into Spark for validation.
 
 ## Key Findings
 
-* Drama is the most common movie genre in the dataset.
-* Drama is the dominant favourite genre among active users and scientists aged 30–40.
-* Top-rated movies include Schindler's List, Casablanca, The Shawshank Redemption and Star Wars.
-* Apache Cassandra successfully stored and retrieved all analytical outputs.
+- Drama is the most common movie genre in the dataset.
+- Drama is the dominant favourite genre among active users.
+- The top-rated movies include Schindler's List, Casablanca, The Shawshank Redemption and Star Wars.
+- Cassandra successfully stored and retrieved the analytical outputs.
+
+## How to Run
+
+1. Start HDP Sandbox.
+2. Start HDFS, Hive, Spark, Zeppelin and Cassandra.
+3. Import the Zeppelin JSON notebook if using Zeppelin.
+4. Open the Jupyter Notebook version for review.
+5. Run notebook sections sequentially.
+6. Ensure Cassandra keyspace and tables are created before running Cassandra write and validation sections.
 
 ## Author
 
 Hasma Nizam bin Mohamad Hassan
-
-Master of Science (Data Science and Analytics)
+Master of Science Data Science and Analytics
