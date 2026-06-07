@@ -1,0 +1,7 @@
+Apache Spark 2.3+
+Apache Cassandra 3.11
+Apache Zeppelin 0.7+
+Hadoop HDFS
+Python 2.7/ PySpark
+Hive
+Spark-Cassandra Connector
