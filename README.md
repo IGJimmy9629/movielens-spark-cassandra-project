@@ -16,6 +16,23 @@ The project demonstrates data loading from HDFS, RDD creation, Spark DataFrame t
 - Python / PySpark
 - Spark-Cassandra Connector
 
+## System Requirements
+
+| Component | Version |
+|---|---|
+| HDP Sandbox | 2.6.5.0-292 |
+| Python | 2.7.5 |
+| Apache Spark | 2.3.0.2.6.5.0-292 |
+| Scala | 2.11.8 |
+| Apache Hadoop / HDFS | 2.7.3.2.6.5.0-292 |
+| Apache Hive | 1.2.1000.2.6.5.0-292 |
+| Apache Cassandra | 3.11.19 |
+| cqlsh | 5.0.1 |
+| Java | OpenJDK 1.8.0_171 |
+| Spark-Cassandra Connector | 2.5.2 for Scala 2.11 |
+
+> Note: The project was executed in HDP Sandbox, which uses Python 2.7.5 for legacy compatibility. Python 3 may be used for local documentation or notebook review, but the executed Zeppelin environment used Python 2.7.5.
+
 ## Dataset
 
 MovieLens 100K dataset containing:
