@@ -1,7 +1,15 @@
-Apache Spark 2.3+
-Apache Cassandra 3.11
-Apache Zeppelin 0.7+
-Hadoop HDFS
-Python 2.7/ PySpark
-Hive
-Spark-Cassandra Connector
+# Big Data Environment
+
+HDP Sandbox==2.6.5.0-292
+Python==2.7.5
+Apache Spark==2.3.0.2.6.5.0-292
+Scala==2.11.8
+Apache Hadoop==2.7.3.2.6.5.0-292
+Apache Hive==1.2.1000.2.6.5.0-292
+Apache Cassandra==3.11.19
+cqlsh==5.0.1
+Java==OpenJDK 1.8.0_171
+
+# Connector
+Spark-Cassandra-Connector==2.5.2
+Scala-Build==2.11
