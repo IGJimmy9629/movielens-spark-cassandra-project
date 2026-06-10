@@ -63,9 +63,8 @@ MovieLens 100K dataset containing:
 1. Start HDP Sandbox.
 2. Start HDFS, Hive, Spark, Zeppelin and Cassandra.
 3. Import the Zeppelin JSON notebook if using Zeppelin.
-4. Open the Jupyter Notebook version for review.
-5. Run notebook sections sequentially.
-6. Ensure Cassandra keyspace and tables are created before running Cassandra write and validation sections.
+4. Run notebook sections sequentially.
+5. Ensure Cassandra keyspace and tables are created before running Cassandra write and validation sections.
 
 ## Author
 
